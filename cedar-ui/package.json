@@ -9,7 +9,7 @@
     "build": "npm run compile && npm run bundle && npm run combine",
     "compile": "babel src/* src/**/* -d _tmp --blacklist es6.modules -e 0",
     "bundle": "rollup _tmp/src/cedar-ui.js -o dist/cedar.js",
-    "combine": "uglifyjs node_modules/document-register-element/build/document-register-element.js dist/bundle.js -o dist/cedar-ui.min.js --source-map",
+    "combine": "uglifyjs node_modules/document-register-element/build/document-register-element.js dist/cedar.js -o dist/cedar-ui.min.js --source-map",
     "server": "http-server"
   },
   "author": "",
